@@ -1,0 +1,179 @@
+<view class="view_contain">
+
+<swiper autoplay interval="2500" circular indicator-dots indicator-color="#272626" indicator-active-color="#557e67">
+  <swiper-item><image mode="widthFix" src="../../images/b1.jpg"/></swiper-item>
+  <swiper-item><image mode="widthFix" src="../../images/b2.jpg"/></swiper-item>
+  <swiper-item><image mode="widthFix" src="../../images/b3.jpg"/></swiper-item>
+</swiper>
+
+<view class="t2">
+<searchbar></searchbar>
+  <view class="menu1" bindtap="topai">
+<image src="/images/m1.png"></image>
+<text decode="{{true}}">&nbsp;排行榜</text>
+</view>
+<view class="menu1" bindtap="toxinshu">
+<image src="/images/m2.png"></image>
+<text decode="{{true}}">&nbsp;新书</text>
+</view>
+<view class="menu1" bindtap="towanjie">
+<image src="/images/m3.png"></image>
+<text decode="{{true}}">&nbsp;完结</text>
+</view>
+<view class="menu1" bindtap="tomanhua">   
+<image src="/images/m4.png"></image>
+<text decode="{{true}}">&nbsp;漫画</text>
+</view>
+</view>  
+
+<view class="textbox1">
+  <view class="header">
+ <view><text decode="{{true}}" class="t1" >精心推荐&nbsp;</text>
+</view> 
+</view>
+  <view class="cont">
+  <view 
+  class="cont1"  
+  bindtap="toDetail"
+  data-id="{{item.id}}">
+    <image class="wen" src="../../images/6.png"></image>
+  </view>
+<view class="cont2">
+<view class="t21" >
+  <text>失落的卫星</text></view> 
+<view class="t22"> 
+  <text>我们生而自由，却往往身不由己。
+在隔绝和封闭的时代
+聆听游荡世界的回声</text>
+</view>
+<view class="t23"> <text decode="{{true}}">刘子超&nbsp;&nbsp;&nbsp;&nbsp;当代文&nbsp;&nbsp;&nbsp;&nbsp;23.4万字</text></view>
+</view>
+</view>
+</view>
+
+<!--热门推荐-->
+<view class="header">
+<view class="tuijian">热门推荐</view>
+<view bindtap="torm" class="more">> 更多</view></view>
+<scroll-view scroll-x="true" class="lun">
+  <view class="t3">
+<view class="menu2">
+<image src="/images/8.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;夜航船</text>
+</view>
+<view class="menu2">
+<image src="/images/10.png"></image>
+<text decode="{{true}}" class="t3b" >追忆似水年华</text>
+</view>
+<view class="menu2">
+<image src="/images/11.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目送</text>
+</view>
+<view class="menu2">
+<image src="/images/5.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;穿越人海</text>
+</view>
+<view class="menu2">
+<image src="/images/12.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;百年孤独</text>
+</view>
+<view class="menu2">
+<image src="/images/13.png"></image>
+<text decode="{{true}}" class="t3b" >月亮与六便士</text>
+</view>
+<view class="menu2">
+<image src="/images/14.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简爱</text>
+</view>
+<view class="menu2">
+<image src="/images/15.png"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;海底两万里</text>
+</view>
+</view>
+</scroll-view><!--
+  女频推荐-->
+  <view class="header">
+<view class="tuijian">女频推荐</view>
+<view bindtap="torm" class="more">> 更多</view></view>
+<scroll-view scroll-x="true" class="lun">
+  <view class="t3">
+<view class="menu2">
+<image src="/images/nv1.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;春日宴</text>
+</view>
+<view class="menu2">
+<image src="/images/nv2.jpg"></image>
+<text decode="{{true}}" class="t3b">&nbsp;&nbsp;少年歌行</text>
+</view>
+<view class="menu2">
+<image src="/images/nv3.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;凤倾九重</text>
+</view>
+<view class="menu2">
+<image src="/images/nv4.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;爱如潮水起</text>
+</view>
+<view class="menu2">
+<image src="/images/nv5.jpg"></image>
+<text decode="{{true}}" class="t3b" >忍不住的是他</text>
+</view>
+<view class="menu2">
+<image src="/images/nv6.jpg"></image>
+<text decode="{{true}}" class="t3b" >一川烟雨</text>
+</view>
+<view class="menu2">
+<image src="/images/nv7.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;沉醉何欢凉</text>
+</view>
+<view class="menu2">
+<image src="/images/nv8.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;慕嫡娇</text>
+</view>
+</view>
+</scroll-view>
+
+
+
+ <!--男频推荐--> 
+ <view class="header">
+ <view class="tuijian">男频推荐</view>
+<view bindtap="torm" class="more">> 更多</view>
+</view>
+ <scroll-view scroll-x="true" class="lun">
+   <view class="t3">
+
+<view class="menu2">
+<image src="/images/nan1.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;太平客栈</text>
+</view>
+<view class="menu2">
+<image src="/images/nan2.jpg"></image>
+<text decode="{{true}}" class="t3b" >仙魔同修</text>
+</view>
+<view class="menu2">
+<image src="/images/nan3.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;最得意</text>
+</view>
+<view class="menu2">
+<image src="/images/nan4.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;三世独尊</text>
+</view>
+<view class="menu2">
+<image src="/images/nan5.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;雪落天山</text>
+</view>
+<view class="menu2">
+<image src="/images/nan6.jpg"></image>
+<text decode="{{true}}" class="t3b" >校花暧昧保安</text>
+</view>
+<view class="menu2">
+<image src="/images/nan7.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;都市仙尊</text>
+</view>
+<view class="menu2">
+<image src="/images/nan8.jpg"></image>
+<text decode="{{true}}" class="t3b" >&nbsp;&nbsp;&nbsp;&nbsp;神级奶爸</text>
+</view>
+</view>
+</scroll-view>
+</view>
